@@ -22,14 +22,13 @@ function App() {
             id='editor'
             name='editor'
             title='Editor'
-            className='w-full h-full p-4'
             onChange={onHandleChange}
             value={text}
           />
         </Card>
 
         <Card icon={visibilityIcon} title='Preview'>
-          <div id='preview' className='w-full bg-slate-700 flex justify-center'>
+          <div id='preview'>
             <Markdown>{text}</Markdown>
           </div>
         </Card>
